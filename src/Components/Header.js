@@ -8,7 +8,10 @@ const Header = () => (
     {/* TODO fix this img issue, find correct path */}
     <img src='http:localhost:3000/Users/jkit/FullStack_local/websites/careerDay/src/logo.svg' alt='logo' 
     />
-    <h1>Career Path</h1>  
+    <h1>Career Path</h1>
+    {/* TODO social media links */}
+    {/* TODO form w/ login */}
+      
   </div>
 );
 
