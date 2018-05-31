@@ -1,0 +1,12 @@
+import React from 'react';
+// Use below to import components from this folder
+import { Carousel, Discover, Footer, Header, Nav, QuickTips} from './Main';
+
+export {
+  Carousel, 
+  Discover, 
+  Footer, 
+  Header, 
+  Nav, 
+  QuickTips
+}
