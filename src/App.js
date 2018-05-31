@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Header from './Header';
+// import Header from './Header';
+// new Header component
+import Header from './Components/Header';
 import Tips from './Tips';
 import logo from './logo.svg';
 import './App.css';

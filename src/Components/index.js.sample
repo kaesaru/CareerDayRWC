@@ -1,0 +1,7 @@
+import React from 'react';
+// Use below to import components from this folder
+// import XX from './xx';
+
+export {
+  // export the imported files from above
+}
