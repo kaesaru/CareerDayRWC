@@ -46,7 +46,7 @@ class MentorChip extends React.Component {
         <ul>● {mentor.history[1]} </ul>
         <ul>● {mentor.history[2]}</ul>
         <p className='strong'><strong>Summary/Message to students</strong></p>    
-        <p>{mentor.summary}}</p>        
+        <p>{mentor.summary}</p>        
         <button>Learn more</button>
       </div>
     )
