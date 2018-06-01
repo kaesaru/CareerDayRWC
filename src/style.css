@@ -56,9 +56,21 @@ p.strong {
 .mentor-3 {
   background: #d3d3d3;
 }
+.discover {
+  height: 500px;
+  background-image: url("http://localhost:3000/Users/jkit/FullStack_local/websites/careerDay/src/outdoorchallenge-clouds-cloudscape.jpg");
+  background-color: #ffffe0;
+}
 .discover button {
   position: relative;
-  left: 100px;
+  top: 200px;
+  left: 510px;
+}
+.discover h2 {
+  font-size: 46px;
+  position: relative;
+  top: 230px;
+  left: 400px;
 }
 .quickTips {
   text-align: center;
