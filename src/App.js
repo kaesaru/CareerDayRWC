@@ -11,6 +11,7 @@ import Footer from './Components/Main/Footer';
 // import Tips from './Tips';
 import logo from './logo.svg';
 import './App.css';
+import './style.css';
 
 class App extends Component {
   render() {

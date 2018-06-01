@@ -1,0 +1,37 @@
+.mentors {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.mentor-1 {
+  background: #d2b48c;
+}
+.mentor-2 {
+  background: #87ceeb;
+}
+.mentor-3 {
+  background: #d3d3d3;
+}
+.quickTips {
+  text-align: center;
+}
+.quickTips .tipsContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+}
+button {
+  color: #ffa500;
+  background: #808080;
+  font-size: 20px;
+}
+h1 {
+  color: #808080;
+}
+h2 {
+  color: #008000;
+}
+h3 {
+  color: #00008b;
+}

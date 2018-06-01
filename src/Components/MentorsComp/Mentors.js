@@ -4,22 +4,24 @@ import MentorChip from './MentorChip';
 
 
 const Mentors = () => (
-  <div>
+  <div className='mentors'>
     {/* TODO change so that the specific user mentors are displayed */}
     {/* TODO have the mentors alternate after set time */}
-    <hr/>
+    
+    {/* for some reason, when using grid these turn vertical?? */}
+    {/* <hr/> */}
     <div className='mentor-1'>
       <MentorChip />
     </div>
-    <hr/>
+    {/* <hr/> */}
     <div className='mentor-2'>
       <MentorChip />
     </div>
-    <hr/>
+    {/* <hr/> */}
     <div className='mentor-3'>
       <MentorChip />
     </div>
-    <hr/>
+    {/* <hr/> */}
   </div>
 );
 
