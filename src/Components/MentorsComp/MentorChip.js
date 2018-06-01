@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 const mentor = {
   name: 'Julius',
   career: 'Patent Examiner',
+  edu: ['B.S. Chemical Engineering'],
   img: 'pic',
   history: [
     'Paragon Bioservices, Manufacturing Associate II, 2015, 1 year',
@@ -33,10 +34,12 @@ class MentorChip extends React.Component {
         {/* TODO mentor chips added here with the information below */}
         {/* TODO style image with "width:500px;height:600px;" */}
         <img src='#' alt='mentor image' />
-        <h3>{`${mentor.name} - ${mentor.career}`}</h3> 
+        <h3>{`${mentor.name} - ${mentor.career}`}</h3>
+        <h4>{`Education - ${mentor.edu}`}</h4>
         {/* <h3>{`Career: ${'Patent Examiner'}`}</h3> */}
+
         {/* TODO default for history is "current" */}
-        <h3>History</h3>
+        <h4>History</h4>
           {/* Place them in order starting with most recent */}
           {/* Maybe limit to previous two jobs */}
         <ul>● {mentor.history[0]}</ul>      

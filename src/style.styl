@@ -7,6 +7,9 @@ button
   background grey
   font-size 20px
 
+h1, h2, h3, h4, p, ul
+  padding-left 5px
+
 h1
   color grey
 
@@ -16,14 +19,23 @@ h2
 h3
   color primaryText
 
-p
-  padding 0 
+h4
   margin 0
+  color primaryText
+
+p 
+  margin 0
+
+ul
+  margin 0
+  padding-left 10px
 
 p.strong
   padding-top 10px
   padding-bottom 5px
   
+
+
 
 // Mentor styling
 .mentors
@@ -31,6 +43,12 @@ p.strong
   margin 0
   display grid
   grid-template-columns: repeat(3, 1fr)
+
+.mentors button
+  margin-top 10px
+  margin-bottom 10px
+  position: relative
+  left 150px
 
 .mentor-1
   background tan
@@ -40,6 +58,11 @@ p.strong
 
 .mentor-3
   background lightgrey
+
+// Discover styles
+.discover button
+  position: relative
+  left 100px
 
 // QuickTips style
 .quickTips
