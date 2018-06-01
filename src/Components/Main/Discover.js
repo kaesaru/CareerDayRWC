@@ -9,7 +9,7 @@ const Discover = () => (
     {/* TODO design accent shapes */}
 
     {/* TODO place in center of div */}
-    <div>
+    <div className='discoverImg'>
       <h2>Discvoer Your Path</h2>
     </div>
     {/* TODO add career bubbles/shapes with different careers */}

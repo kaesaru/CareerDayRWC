@@ -15,7 +15,7 @@
 
 .App {
   display: grid;
-  grid-gap: 20px;
+  /* grid-gap: 20px; */
   grid-template-columns: repeat(3, minmax(250px, 1fr));
   grid-template-areas: 
     "header header header"

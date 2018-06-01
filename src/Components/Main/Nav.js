@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 // TODO need to import pages from router
 
 const Nav = () => (
-  <div>
+  <div className='nav'>
     {/* TODO reorder more relavent to the left */}
     {/* TODO add functionality to the Buttons to go to desired pages */}
     {/* TODO style buttons and orient on website */}

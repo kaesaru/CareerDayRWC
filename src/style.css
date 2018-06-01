@@ -1,3 +1,6 @@
+body {
+  background-color: #f00;
+}
 button {
   color: #ffa500;
   background: #808080;
@@ -35,6 +38,49 @@ p.strong {
   padding-top: 10px;
   padding-bottom: 5px;
 }
+.header {
+  background-color: #0f0;
+  padding: 0;
+}
+.header h1 {
+  margin: 0;
+  padding: 0;
+}
+.header img {
+  background-color: #fff;
+  position: relative;
+  top: 10px;
+  left: -560px;
+}
+.nav {
+  margin: 0;
+  padding: 20px;
+  background-color: #87ceeb;
+}
+.discover {
+  margin: 0;
+  padding: 0;
+  height: 500px;
+  background-image: url("http://localhost:3000/Users/jkit/FullStack_local/websites/careerDay/src/outdoorchallenge-clouds-cloudscape.jpg");
+  background-color: #ffffe0;
+}
+.discoverImg {
+  margin: 0;
+  padding: 0;
+  background-color: #00f;
+  background-image: url("http://localhost:3000/Users/jkit/FullStack_local/websites/careerDay/src/outdoorchallenge-clouds-cloudscape.jpg");
+}
+.discover button {
+  position: relative;
+  top: 200px;
+  left: 510px;
+}
+.discover h2 {
+  font-size: 46px;
+  position: relative;
+  top: 230px;
+  left: 400px;
+}
 .mentors {
   padding: 0;
   margin: 0;
@@ -55,22 +101,6 @@ p.strong {
 }
 .mentor-3 {
   background: #d3d3d3;
-}
-.discover {
-  height: 500px;
-  background-image: url("http://localhost:3000/Users/jkit/FullStack_local/websites/careerDay/src/outdoorchallenge-clouds-cloudscape.jpg");
-  background-color: #ffffe0;
-}
-.discover button {
-  position: relative;
-  top: 200px;
-  left: 510px;
-}
-.discover h2 {
-  font-size: 46px;
-  position: relative;
-  top: 230px;
-  left: 400px;
 }
 .quickTips {
   text-align: center;
