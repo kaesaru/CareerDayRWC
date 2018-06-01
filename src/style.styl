@@ -1,9 +1,12 @@
 // variables
 primaryText = darkblue
+bodyColor = #e89999
+footerColor= #012426
+
 
 // basic styling 
 body
-  background-color red
+  background-color bodyColor
 button 
   color orange
   background grey
@@ -36,6 +39,11 @@ p.strong
   padding-top 10px
   padding-bottom 5px
 
+// App
+.App
+  padding 0
+  margin 0
+
 // Header
 .header 
   background-color lime
@@ -63,22 +71,24 @@ p.strong
   margin 0
   padding 0
   height 500px
-  background-image: url('http://localhost:3000/Users/jkit/FullStack_local/websites/careerDay/src/outdoorchallenge-clouds-cloudscape.jpg')
   background-color lightyellow
 
 .discoverImg
   margin 0
   padding 0
-  background-color blue
+  // background-color grey
   background-image: url('http://localhost:3000/Users/jkit/FullStack_local/websites/careerDay/src/outdoorchallenge-clouds-cloudscape.jpg')
 
 .discover button
   position: relative
-  top 200px
+  top 240px
   left 510px
 
 .discover h2
+  // ISSUE FOUND its here
   font-size 46px
+  // margin to fix the issue
+  margin 0
   position relative 
   top 230px
   left 400px
@@ -114,3 +124,7 @@ p.strong
   display grid
   grid-template-columns 1fr 1fr
   grid-template-rows: repeat(4, auto)
+
+// Footer styles
+.footer
+  background-color footerColor

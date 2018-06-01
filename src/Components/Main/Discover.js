@@ -10,6 +10,7 @@ const Discover = () => (
 
     {/* TODO place in center of div */}
     <div className='discoverImg'>
+      <img src={require('../../outdoorchallenge-clouds-cloudscape.jpg')}   alt='outdoor Mountain and Clouds'  height="500" width="1175"/> 
       <h2>Discvoer Your Path</h2>
     </div>
     {/* TODO add career bubbles/shapes with different careers */}
