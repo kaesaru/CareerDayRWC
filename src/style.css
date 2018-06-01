@@ -12,6 +12,14 @@ h2 {
 h3 {
   color: #00008b;
 }
+p {
+  padding: 0;
+  margin: 0;
+}
+p.strong {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
 .mentors {
   padding: 0;
   margin: 0;

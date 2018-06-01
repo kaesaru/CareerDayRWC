@@ -16,7 +16,7 @@ const MentorChip = () => (
     <ul>● Paragon Bioservices, Manufacturing Associate II, 2015, 1 year</ul>      
     <ul>● GSK, Manufacturing Associate I, 2014, 1.5 years</ul>
     <ul>● Eastman Chemical Company, Intern, 6 months</ul>
-    <p><strong>Summary/Message to students</strong></p>    
+    <p className='strong'><strong>Summary/Message to students</strong></p>    
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit placeat, voluptatem reprehenderit sint consectetur maxime asperiores dolorem voluptatum debitis similique. Ipsum maiores sed optio, aut recusandae nesciunt necessitatibus cumque accusamus.</p>        
     <button>Learn more</button>
   </div>
