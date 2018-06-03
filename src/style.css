@@ -45,44 +45,77 @@ p.strong {
 .header {
   background-color: #0f0;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
 }
 .header h1 {
   margin: 0;
   padding: 0;
+  font-size: 50px;
+}
+.header h2 {
+  margin: 0;
+  font-size: 20px;
 }
 .header img {
-  background-color: #fff;
+  background-color: #00f;
   position: relative;
-  top: 10px;
-  left: -560px;
+  left: 10px;
+}
+.header.nav {
+  position: sticky;
+  top: 0;
 }
 .nav {
   margin: 0;
-  padding: 20px;
+  padding: 5px;
   background-color: #87ceeb;
+  display: flex;
+  justify-content: space-around;
+}
+.nav button {
+  border: 2px solid #f00;
+  border-radius: 25px;
 }
 .discover {
   margin: 0;
   padding: 0;
   height: 500px;
   background-color: #ffffe0;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(13, 1fr);
 }
 .discoverImg {
   margin: 0;
   padding: 0;
-  background-image: url("http://localhost:3000/Users/jkit/FullStack_local/websites/careerDay/src/outdoorchallenge-clouds-cloudscape.jpg");
+  grid-column: span 11;
+  grid-row: span 13;
+}
+.discoverImg .overlay {
+  position: absolute;
+  top: 168px;
+  height: 500px;
+  width: 99%;
+  z-index: 1;
+  opacity: 0.2;
+  background-color: #000;
 }
 .discover button {
-  position: relative;
-  top: 240px;
+  position: absolute;
+  z-index: 2;
+  top: 400px;
   left: 510px;
 }
 .discover h2 {
-  font-size: 46px;
   margin: 0;
-  position: relative;
-  top: 230px;
+  position: absolute;
+  top: 350px;
   left: 400px;
+  z-index: 2;
+  font-size: 46px;
 }
 .mentors {
   padding: 0;
@@ -115,4 +148,34 @@ p.strong {
 }
 .footer {
   background-color: #012426;
+  height: 1fr;
+  width: 100%;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  grid-template-rows: repeat(3, 35px);
 }
+/*
+  
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+
+
+Examples:
+Shorthand 
+.container {
+    grid: [row1-start] "header header header" 1fr [row1-end]
+          [row2-start] "footer footer footer" 25px [row2-end]
+          / auto 50px auto;
+  }
+
+  equivalent
+
+  .container {
+    grid-template-areas: 
+      "header header header"
+      "footer footer footer";
+    grid-template-rows: [row1-start] 1fr [row1-end row2-start] 25px [row2-end];
+    grid-template-columns: auto 50px auto;    
+  }
+
+   */

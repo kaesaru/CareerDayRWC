@@ -10,9 +10,11 @@ const Discover = () => (
 
     {/* TODO place in center of div */}
     <div className='discoverImg'>
-      <img src={require('../../outdoorchallenge-clouds-cloudscape.jpg')}   alt='outdoor Mountain and Clouds'  height="500" width="1175"/> 
-      <h2>Discvoer Your Path</h2>
+      <img src={require('../../images/outdoorchallenge-clouds-cloudscape.jpg')}   alt='outdoor Mountain and Clouds'  height="500" width="100%"/> 
+      <h2 className='text'>Discvoer Your Path</h2>
+      <div className='overlay'></div>    
     </div>
+    
     {/* TODO add career bubbles/shapes with different careers */}
     {/* TODO add link to all the careers from presenters */}
     <button>Discover More</button>

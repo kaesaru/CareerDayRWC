@@ -48,23 +48,41 @@ p.strong
 .header 
   background-color lime
   padding 0  
+  display grid
+  grid-template-columns 1fr 3fr 1fr
+  align-items center
 
 .header h1
   margin 0
   padding 0
+  font-size 50px
+
+.header h2
+  margin 0
+  font-size 20px
 
 .header img
   // what is the position relative too? seems a bit off   
-  background-color white
+  background-color blue
   position relative
-  top 10px
-  left -560px
+  // top 10px
+  left 10px
+
+.header.nav
+  position sticky
+  top 0
 
 // Nav
 .nav
   margin 0
-  padding 20px
+  padding 5px
   background-color skyblue
+  display flex
+  justify-content space-around
+
+.nav button
+  border 2px solid red
+  border-radius 25px
 
 // Discover styles
 .discover
@@ -72,26 +90,68 @@ p.strong
   padding 0
   height 500px
   background-color lightyellow
+  display grid
+  grid-gap 10px
+  grid-template-columns: repeat(11, 1fr)
+  grid-template-rows: repeat(13, 1fr)
 
 .discoverImg
   margin 0
   padding 0
+  grid-column span 11
+  grid-row span 13
+  // z-index: 2;
   // background-color grey
-  background-image: url('http://localhost:3000/Users/jkit/FullStack_local/websites/careerDay/src/outdoorchallenge-clouds-cloudscape.jpg')
+  // background-image: url('http://localhost:3000/Users/jkit/FullStack_local/websites/careerDay/src/outdoorchallenge-clouds-cloudscape.jpg')
+
+.discoverImg .overlay
+  // position relative
+  // top 0
+  // left 0
+  position absolute
+  top 168px
+  height 500px
+  width 99%
+  z-index 1
+  opacity 0.2
+  background-color black
+
+// .discoverImg img
+//   position: fixed; /* Sit on top of the page content */
+//   display: none; /* Hidden by default */
+//   width: 100%; /* Full width (cover the whole page) */
+//   height: 100%; /* Full height (cover the whole page) */
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+//   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+//   cursor: pointer; /* Add a pointer on hover */
+
 
 .discover button
-  position: relative
-  top 240px
+  position: absolute
+  z-index 2
+  top 400px
   left 510px
+  // ISSUE grid works, but it pushes the image down, and does not overlay it
+  // grid-column 5 / 8
+  // grid-row 6 / 7
 
 .discover h2
   // ISSUE FOUND its here
-  font-size 46px
   // margin to fix the issue
   margin 0
-  position relative 
-  top 230px
+  position absolute
+  top 350px
   left 400px
+  // ISSUE when using grid no where to be found
+  // grid-column 5 / 8 
+  // grid-row 3 / 6
+  z-index 2
+  
+  font-size 46px
 
 
 // Mentor styling
@@ -128,3 +188,42 @@ p.strong
 // Footer styles
 .footer
   background-color footerColor
+  height 1fr
+  width 100%
+  display grid
+  grid-gap 5px
+  grid-template-columns repeat(3, minmax(250px, 1fr))
+  grid-template-rows repeat(3, 35px) 
+
+  grid-template-areas: 
+    "links blank social"
+    "links blank social"
+    "copy copy copy"
+
+.footer .copy
+  // ISSUE: when trying to add to copy grid-area an extra col and row appear and it does not fit on the designated area.
+  // grid-area copy
+/*
+  
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+
+
+Examples:
+Shorthand 
+.container {
+    grid: [row1-start] "header header header" 1fr [row1-end]
+          [row2-start] "footer footer footer" 25px [row2-end]
+          / auto 50px auto;
+  }
+
+  equivalent
+
+  .container {
+    grid-template-areas: 
+      "header header header"
+      "footer footer footer";
+    grid-template-rows: [row1-start] 1fr [row1-end row2-start] 25px [row2-end];
+    grid-template-columns: auto 50px auto;    
+  }
+
+   */
