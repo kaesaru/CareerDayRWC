@@ -17,7 +17,9 @@ const Discover = () => (
     
     {/* TODO add career bubbles/shapes with different careers */}
     {/* TODO add link to all the careers from presenters */}
-    <button className='ovalButton ovalButton1'>Discover More</button>
+    <button className='ovalButton ovalButton1'>Medical</button>
+    <button className='ovalButton ovalButton2'>Engineering</button>
+    <button className='ovalButton ovalButton3'>Services</button>
   </div>
 );
 

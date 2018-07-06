@@ -133,8 +133,24 @@ button {
 button:hover {
   background-color: #1d3966;
 }
+.styledLink {
+  border: 2px solid #1d3966;
+  border-radius: 42px;
+  color: #d1c8d4;
+  background-color: #4a90e2;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.styledLink:hover {
+  background-color: #1d3966;
+}
 .ovalButton {
   border-radius: 50%;
+  border: none;
   width: 100px;
   height: 100px;
   margin: 0px;
@@ -143,6 +159,26 @@ button:hover {
 .ovalButton1 {
   background: #ee8914;
   color: #fff;
+  position: absolute;
+  z-index: 2;
+  top: 250px;
+  left: 310px;
+}
+.ovalButton2 {
+  background: #96ee14;
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  top: 50px;
+  left: 20px;
+}
+.ovalButton3 {
+  background: #14b1ee;
+  color: #fff;
+  position: absolute;
+  z-index: 2;
+  top: 150px;
+  left: 700px;
 }
 .caption {
 /* Caption: */
@@ -185,6 +221,7 @@ button:hover {
   grid-gap: 10px;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(13, 1fr);
+  position: relative;
 }
 .discoverImg {
   grid-column: span 11;
@@ -202,12 +239,6 @@ button:hover {
   z-index: 1;
   opacity: 0.3;
   background-color: #000;
-}
-.discover button {
-  position: absolute;
-  z-index: 2;
-  top: 400px;
-  left: 510px;
 }
 .discover h2 {
   margin: 0;

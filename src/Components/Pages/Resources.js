@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 
 const Resources = () => (
-  <div className="career"><h3>Career Path</h3>
+  <div className="career"><h3>Resources</h3>
     <li className="item">It is okay if you don’t know if you don't know now, you still have time</li>
     <li className="item">There is no one path, you can:
     <p>Do a traditional career (Doctor, Scientist, Lawyer, Engineer, Sales)</p></li>

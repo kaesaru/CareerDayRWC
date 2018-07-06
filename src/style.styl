@@ -165,8 +165,26 @@ button
 button:hover
   background-color borderColor
 
+.styledLink
+  border: 2px solid #1d3966
+  border-radius 42px
+  color: #D1C8D4
+  background-color: backgroundColor
+  // text-align: left
+
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+.styledLink:hover
+  background-color borderColor
+
 .ovalButton
   border-radius: 50%
+  border none
   width 100px
   height 100px
   margin: 0px;
@@ -175,7 +193,26 @@ button:hover
 .ovalButton1
   background oval1
   color mainFontColor
+  position: absolute
+  z-index 2
+  top 250px
+  left 310px
 
+.ovalButton2
+  background oval2
+  color mainFontColor
+  position: absolute
+  z-index 2
+  top 50px
+  left 20px
+
+.ovalButton3
+  background oval3
+  color mainFontColor
+  position: absolute
+  z-index 2
+  top 150px
+  left 700px
 
 .caption
   /* Caption: */
@@ -253,6 +290,7 @@ button:hover
   grid-gap 10px
   grid-template-columns: repeat(11, 1fr)
   grid-template-rows: repeat(13, 1fr)
+  position relative
 
 .discoverImg
   grid-column span 11
@@ -290,12 +328,12 @@ button:hover
 //   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 //   cursor: pointer; /* Add a pointer on hover */
 
-
-.discover button
-  position: absolute
-  z-index 2
-  top 400px
-  left 510px
+// MOVED UP under .ovalbuttonX
+// .discover button
+//   position: absolute
+//   z-index 2
+//   top 400px
+//   left 510px
   // ISSUE grid works, but it pushes the image down, and does not overlay it
   // grid-column 5 / 8
   // grid-row 6 / 7
