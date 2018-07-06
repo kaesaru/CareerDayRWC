@@ -1,93 +1,252 @@
-// variables
-primaryText = darkblue
-bodyColor = #e89999
-footerColor= #012426
+// Font variables 
+sansFont1 = 'PT Sans', sans-serif
+serifFont1 = 'PT Serif', serif
+
+sansFont2 = 'Cabin', sans-serif
+serifFont2 = 'Lora', serif
+
+Robo1 = 'Roboto', sans-serif
 
 
-// basic styling 
+
+// Site Colors
+backgroundColor = #4A90E2
+mainFontColor = #FFFFFF
+borderColor = #1d3966
+borderRadius = 42px
+
+
+oval1 = #EE8914
+oval2 = #96EE14
+oval3 = #14B1EE
+oval4 = #C814EE
+oval5 = #EE1425
+
+
+// START of CSS for pages
+:root
+  color mainFontColor
+  background backgroundColor
+  margin: 0;
+  padding: 0;
+
+
 body
-  background-color bodyColor
-button 
-  color orange
-  background grey
-  font-size 20px
+  margin: 0;
+  padding: 0;
+  font-family: sansFont1;
+  /* background-color: aquamarine */
+  /* font-family: Comfortaa
+	font-size: 14px
+	font-style: normal
+	font-variant: normal
+	font-weight: 500
+	line-height: 15.4px */
 
-h1, h2, h3, h4, p, ul
-  padding-left 5px
+p
+  // font-family: serifFont1
+  /* font-style: light; */
+  margin 5px
 
 h1
-  color grey
+  /* Headline 1: */
+  opacity: 0.87;
+  font-family: sansFont1;
+  font-size: 96px;
+  letter-spacing: -1.5px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 
-h2 
-  color green 
+h2
+  /* Headline 2: */
+  opacity: 0.87;
+  font-family: sansFont1;
+  font-size: 60px;
+  letter-spacing: -0.5px;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 
 h3
-  color primaryText
+  /* Headline 3: */
+  opacity: 0.87;
+  font-family: sansFont1;
+  font-size: 48px;
+  text-align: left;
 
 h4
-  margin 0
-  color primaryText
+  /* Headline 4: */
+  opacity: 0.87;
+  font-family: sansFont1;
+  font-size: 34px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  padding 10px
+  margin 0px
 
-p 
-  margin 0
+h5
+  /* Headline 5: */
+  opacity: 0.87;
+  font-family: sansFont1;
+  font-size: 24px;
+  padding 5px
+  margin 0px
+  
 
-ul
-  margin 0
-  padding-left 10px
+h6
+  /* Headline 6: */
+  opacity: 0.87;
+  font-family: sansFont1;
+  font-size: 20px;
+  letter-spacing: 0.15px;
+  padding 2px
+  margin 0px
 
-p.strong
-  padding-top 10px
-  padding-bottom 5px
+.subtitleOne 
+  /* Subtitle 1: */
+  opacity: 0.87;
+  font-family: sansFont1;
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  text-align: left;
+  line-height: 24px;
 
-// App
-.App
-  padding 0
-  margin 0
+.subtitleTwo 
+  /* Subtitle 2: */
+  opacity: 0.87;
+  font-family: sansFont1;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  line-height: 24px;
+
+
+.bodyOne 
+  /* Body 1: */
+  font-family: sansFont1;
+  font-size: 16px;
+  letter-spacing: 0.44px;
+  text-align: left;
+  line-height: 28px;
+  padding 0px 5px
+
+.bodyTwo 
+  /* Body 2: */
+  opacity: 0.87;
+  font-family: sansFont1;
+  font-size: 14px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  line-height: 20px;
+
+.button
+  /* Button: */
+  opacity: 0.87;
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+
+button 
+  border: 2px solid #1d3966
+  border-radius 42px
+  color: #D1C8D4
+  background-color: backgroundColor
+  // text-align: left
+
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+button:hover
+  background-color borderColor
+
+.ovalButton
+  border-radius: 50%
+  width 100px
+  height 100px
+  margin: 0px;
+  padding 5px
+
+.ovalButton1
+  background oval1
+  color mainFontColor
+
+
+.caption
+  /* Caption: */
+  opacity: 0.87;
+  font-family: sansFont1;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  text-align: left;
+  line-height: 16px;
+
+.overline
+  /* Overline: */
+  opacity: 0.87;
+  font-family: sansFont1;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  line-height: 16px;
+  text-transform: uppercase;
+
 
 // Header
 .header 
-  background-color lime
-  padding 0  
+  background-color backgroundColor
   display grid
   grid-template-columns 1fr 3fr 1fr
   align-items center
 
-.header h1
-  margin 0
-  padding 0
-  font-size 50px
-
-.header h2
-  margin 0
-  font-size 20px
-
 .header img
   // what is the position relative too? seems a bit off   
-  background-color blue
+  // background-color blue
   position relative
   // top 10px
-  left 10px
+  left 3px
 
 .header.nav
-  position sticky
-  top 0
+  // ISSUE sticky not working
+  // position sticky
+  // top 0
 
 // Nav
 .nav
-  margin 0
   padding 5px
-  background-color skyblue
+  border solid 1px borderColor
   display flex
   justify-content space-around
 
 .nav button
-  border 2px solid red
-  border-radius 25px
+  // border 2px solid borderColor
+  // border-radius 25px
+
+// MOVED UP to button class
+  // border: 2px solid #1d3966
+  // border-radius 42px
+  // color: #D1C8D4
+  // background-color: backgroundColor
+  // text-align: left
+
+  // padding: 5px 32px;
+  // text-align: center;
+  // text-decoration: none;
+  // font-size: 16px;
+  // margin: 4px 2px;
+  // cursor: pointer;
+
+
+// MOVED UP under buttons
+// .nav button:hover
+//   background-color borderColor
 
 // Discover styles
 .discover
-  margin 0
-  padding 0
   height 500px
   background-color lightyellow
   display grid
@@ -96,10 +255,9 @@ p.strong
   grid-template-rows: repeat(13, 1fr)
 
 .discoverImg
-  margin 0
-  padding 0
   grid-column span 11
   grid-row span 13
+  position relative
   // z-index: 2;
   // background-color grey
   // background-image: url('http://localhost:3000/Users/jkit/FullStack_local/websites/careerDay/src/outdoorchallenge-clouds-cloudscape.jpg')
@@ -109,11 +267,14 @@ p.strong
   // top 0
   // left 0
   position absolute
-  top 168px
+  top 0px
+  left 0px
+  right 0px
+  bottom 0px
   height 500px
-  width 99%
+  width 100%
   z-index 1
-  opacity 0.2
+  opacity 0.3
   background-color black
 
 // .discoverImg img
@@ -160,25 +321,52 @@ p.strong
   margin 0
   display grid
   grid-template-columns: repeat(3, 1fr)
+  position relative
+  justify-self center
 
 .mentors button
-  margin-top 10px
-  margin-bottom 10px
-  position: relative
-  left 150px
+  justify-items center
+//   margin-top 10px
+//   margin-bottom 10px
+//   position: relative
+//   left 150px
+
+.mentorChip img 
+  float left
+  // position relative
 
 .mentor-1
-  background tan
+  background oval1
+
+  // position relative
+  // margin-top 10px
+  // margin-bottom 10px
+
+.mentor-1 button, 
+.mentor-2 button, 
+.mentor-3 button 
+  position relative
+  left 30%
 
 .mentor-2
-  background skyblue
+  background oval2
+  // margin-top 10px
+  // margin-bottom 10px
+
 
 .mentor-3
-  background lightgrey
+  background oval3
+  // margin-top 10px
+  // margin-bottom 10px
 
 // QuickTips style
 .quickTips
+  // text-align center
+
+.title
   text-align center
+  text-decoration: underline
+  text-decoration-color: black
 
 .quickTips .tipsContent
   display grid
@@ -188,19 +376,92 @@ p.strong
 // Footer styles
 .footer
   background-color footerColor
-  height 1fr
-  width 100%
+  // height auto
+  // width 100%
   display grid
   grid-gap 5px
-  grid-template-columns repeat(3, minmax(250px, 1fr))
-  grid-template-rows repeat(3, 35px) 
+  grid-template-columns 1fr 1fr 1fr//repeat(3, minmax(250px, 1fr))
+  grid-template-rows 35px 35px 35px//repeat(3, 35px)
+  // justify-items: left;
+  // justify-content: left;
+  align-items: left; 
+  // place-items: stretch stretch;
+  // justify-content: space-between;
+  // align-content: space-between; 
 
   grid-template-areas: 
     "links blank social"
     "links blank social"
     "copy copy copy"
 
-.footer .copy
+.copyright
+  grid-column 1 / -1
+  grid-row 3 / -1
+  // grid-area links
+  align-self: center
+  color limegreen
+
+  // grid-column copy-start / copy-end
+  // justify-items: center
+  // align-items: center
+
+.socialMedia
+  grid-column 3 / -1
+  grid-row 1 / 3
+  align-self center
+  // grid-area social
+
+.nav1
+  grid-column 1
+  grid-row 1 
+  // grid-area links
+  align-self: center
+  color mainFontColor
+
+.nav2
+  grid-column 1
+  grid-row 2 / 3
+  align-self center
+  color mainFontColor 
+
+
+// RESPONSIVE
+
+// Header
+.header 
+  @media only screen and (max-width: 600px)
+    background-color limegreen
+    display flex
+    grid-template-columns 1fr 3fr 1fr
+    align-items center
+
+.header img
+  // what is the position relative too? seems a bit off   
+  // background-color blue
+  @media only screen and (max-width: 600px)
+    width 125px
+    height 75px
+    position relative
+    // top 10px
+    left 3px
+
+.header h1
+  @media only screen and (max-width: 600px)
+    font-size: 76px;
+    letter-spacing: -1.5px;
+    // text-align: center;
+    margin-left 10px
+  
+// Nav
+.nav
+  padding 5px
+  border solid 1px borderColor
+  display flex
+  justify-content space-around
+
+
+
+//.footer .copy
   // ISSUE: when trying to add to copy grid-area an extra col and row appear and it does not fit on the designated area.
   // grid-area copy
 /*

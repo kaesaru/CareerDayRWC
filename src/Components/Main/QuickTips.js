@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const QuickTips = () => (
   <div className='quickTips'>
-    <h2>Quick Tips/Knowledge</h2>
+    <h3 className='title'>Quick Tips/Knowledge</h3>
       <div className='tipsContent'>
         <ul>● Have an open mind and be creative</ul> 
         <ul>● Think about how you can acheive your goal and take action</ul> 

@@ -30,24 +30,28 @@ class MentorChip extends React.Component {
   
   render() {
     return (
-      <div>
+      <div className='mentorChip'>
         {/* TODO mentor chips added here with the information below */}
         {/* TODO style image with "width:500px;height:600px;" */}
-        <img src='#' alt='mentor image' />
-        <h3>{`${mentor.name} - ${mentor.career}`}</h3>
-        <h4>{`Education - ${mentor.edu}`}</h4>
+        <img 
+        src="./images/jack-cain-351549-unsplash.jpg" 
+        alt='mentor image'
+        width='150px' height='100px' 
+        />
+        <h4>{` ${mentor.name} - ${mentor.career}`}</h4>
+        <h5>{`Education - ${mentor.edu}`}</h5>
         {/* <h3>{`Career: ${'Patent Examiner'}`}</h3> */}
 
         {/* TODO default for history is "current" */}
-        <h4>History</h4>
+        <p className='x'>History</p>
           {/* Place them in order starting with most recent */}
           {/* Maybe limit to previous two jobs */}
-        <ul>● {mentor.history[0]}</ul>      
-        <ul>● {mentor.history[1]} </ul>
-        <ul>● {mentor.history[2]}</ul>
-        <p className='strong'><strong>Summary/Message to students</strong></p>    
-        <p>{mentor.summary}</p>        
-        <button>Learn more</button>
+        <ul className='bodyTwo'>● {mentor.history[0]}</ul>      
+        <ul className='bodyTwo'>● {mentor.history[1]} </ul>
+        <ul className='bodyTwo'>● {mentor.history[2]}</ul>
+        <p className='x'><strong>Summary/Message to students</strong></p>    
+        <p className='bodyTwo'>{mentor.summary}</p>        
+        <button className='button'>Learn more</button>
       </div>
     )
   }
