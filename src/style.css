@@ -161,24 +161,24 @@ button:hover {
   color: #fff;
   position: absolute;
   z-index: 2;
-  top: 250px;
-  left: 310px;
+  top: 45%;
+  left: 55%;
 }
 .ovalButton2 {
   background: #96ee14;
   color: #fff;
   position: absolute;
   z-index: 2;
-  top: 50px;
-  left: 20px;
+  top: 10%;
+  left: 2%;
 }
 .ovalButton3 {
   background: #14b1ee;
   color: #fff;
   position: absolute;
   z-index: 2;
-  top: 150px;
-  left: 700px;
+  top: 30%;
+  left: 75%;
 }
 .caption {
 /* Caption: */

@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
 import MentorChip from './MentorChip';
+
 
 
 const Mentors = () => (
@@ -22,7 +25,19 @@ const Mentors = () => (
       <MentorChip />
     </div>
     {/* <hr/> */}
+    {/* {Object.keys(this.state.mentors).map(key => 
+            <Mentor 
+              key={key} 
+              details={this.state.mentors[key]} />)
+          } */}
   </div>
 );
 
-export default Mentors; 
+
+function mapState(state) {
+  return {
+    stateFromStore: state
+  };
+}
+
+export default connect(mapState)(Mentors); 

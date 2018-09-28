@@ -31,11 +31,21 @@ import base from './base';
 */
 
 // state
-const data = sampleMentors;
+//const data = sampleMentors;
 const initialState = {
-  numbers: 0,
-  mentorsData: data
+  //numbers: 0,
+  //mentorsData: data
 };
+
+// ISSUE when placed here does not show up in Root
+// const mentors = base.syncState('mentors', 
+//   {
+//     context: this,
+//     state: 'mentors'
+//   }
+// )
+
+// console.log(mentors);
 
 // Actions 
 // QUESTION: can these be incorperated into the creator? why is is seperate?
@@ -91,6 +101,15 @@ console.log(ADD_MENTOR);
 
 
 
+const createState = ( state = {}, action ) =>{ 
+  switch (action.type) {
+    case 'ADD_STATE':
+      return state
+    default:
+      return state;
+  }
+}
+
 /*  STORE
 *   - Holds state (all of it?)
 *   - access to state "getState()"
@@ -101,7 +120,7 @@ console.log(ADD_MENTOR);
 *   2nd arg - (optional) specify state
 *
 */
-let store = createStore(modifyMentor, initialState);
+let store = createStore(createState, initialState);
 
 console.log(store.getState());
 // console.log(typeof(increment));
@@ -146,6 +165,7 @@ console.log(store.getState());
 class Root extends React.Component {
   constructor(props) {
     super(props);
+    this.state = this.mentorsRef;
   }
 
   componentWillMount() {
@@ -154,15 +174,41 @@ class Root extends React.Component {
       context: this,
       state: 'mentors'
     });
+    // console.log(this.mentorsRef);
+    console.log('will mount');
+    console.log(this.mentorsRef.context.state);
+    this.state = this.mentorsRef.context.state;
+
+  }
+
+  componentDidMount() {
+    // console.log(this.state);
+    console.log(store.getState());
+    console.log('did mount');
+
+    console.log(this.mentorsRef.context.state);
+
   }
 
   componentWillUnmount() {
     base.removeBinding(this.mentorsRef);
+    
+    console.log('umount');
+    console.log(this.mentorsRef.context.state);
+
   }
 
+  check = () => {
+    console.log('hello');
+  };
+
   render() {
+    // const data = this.state.mentors
+    console.log(this.mentorsRef.context.state);
+
     return (
       <Provider store={store}>
+      {/* Because Router is just used to route tothe different pages it makes sense to use Redux to go directly to the component rather then trying to pass it down */}
         <Router>
           <div>
             <Route path="/" exact component={App} />
@@ -191,7 +237,7 @@ Root.propTypes = {
 
 ReactDOM.render(
 <Root />, document.getElementById('root'));
-registerServiceWorker();
+// registerServiceWorker();
 
 
 
